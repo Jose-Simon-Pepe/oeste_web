@@ -1,0 +1,77 @@
+= Propuesta formativa software
+
+Principios de programacion y desarrollo de software comercial orientado al backend dentro de las practicas agiles.
+
+== Extension
+
+Desde Analisis de requerimientos hasta entrega y recoleccion de feedback
+
+== Propuesta general
+
+Veremos con caracter explicativo e introductorio (foco en lo conceptual, no profundizacion en lo tecnico) los siguientes topicos:
+
+. Desmitificacion y aclaracion
+
+_¿Hace falta ser un genio para programar? ¿Que cualidades me hacen buen programador? ¿El programador gana tanta plata? ¿Que tipos de trabajos existen en programacion?_
+
+. Bases de la programacion
+
+_¿Que es programar? ¿Por que es util para la vida comun? ¿Por que es util para un desarrollador? ¿Que es el software? ¿Que es el hardware? ¿Que es un computador? ¿Cuales son los puntos mas importantes de la programacion para trabajar en desarrollo?_
+Te voy a introducir a la programacion contandote la historia apasionante de como nacio. Gracias a eso vas a conocer los principios, palabras y conceptos clave de la programacion, y vas a poder utilizarla para trabajar en software.
+
+. Bases de la informatica
+
+_¿Como se componen las PC mayoritarias? ¿Que es el codigo binario? ¿Que es la memoria RAM? ¿Para que sirve cada tipo de memoria?_
+
+. Principios de la programacion (Foco en POO imperativo)
+
+_¿Que paradigmas existen? ¿Que estructuras de control existen en programacion imperativa? ¿Que es un lenguaje de programacion? ¿Que es un entorno de desarrollo?_
+
+. Diseño de software
+
+_¿Que y para que es diseñar software? ¿Cuales son los 6 principios fundamentales del diseño de software? ¿Que son los patrones de diseño?_
+
+. Principios del desarrollo agil
+
+_¿Que es el iterativismo incrementalista? ¿Que son las iteraciones? ¿Que es el valor? ¿Como priorizar tareas de desarrollo? ¿Que importancia tiene aprender temprano? ¿Por que fallar antes?_
+
+. Introduccion a la arquitectura de software
+
+_¿Que es la arquitectura? ¿Que es la arquitectura de software? ¿Que son los atributos de calidad? ¿Que son los patrones de arquitectura? ¿Que son los estilos de arquitectura?_
+
+. Concurrencia, Paralelismo y Asincronia 
+
+_¿Como coordinar algo secuencial con algo que aun no esta procesado? ¿Que es la concurrencia, paralelismo y asincronia? ¿Cuando es conveniente usar cada una dentro de Backend?_
+
+. Introduccion a Bases de Datos
+
+_¿Que diferencia tienen frente a los archivos o a Excel? ¿Que son las consultas? ¿Que son los esquemas? ¿Que es la normalizacion? ¿Como incorporar a nuestro sistema una base de datos?_
+
+. Empaquetamiento y distribucion
+
+_¿Como buildear y empaquetar una aplicacion? ¿Que fallas comunes existen en backend? ¿Como entregarle una release a un cliente? ¿Como obtener feedback de la entrega?_
+
+== Propuestas a universitarios
+
+Si sos un universitario probablemente te interese, ademas de los topicos generales, profundizar en los siguientes temas.
+
+. Refuerzo en comprension lectora academica (Estudios tecnicos): Tecnicas de lectura, Estrategias de estudio.
+. Apoyo en materias (Referencia UNLaM):
+  - Matematica General (Gratis)
+  - Informatica General
+  - Programacion Basica 1: (Gratis)
+  - Programacion Basica 2
+  - Programacion Web 1: (Gratis)
+  - Programacion Web 2
+  - Bases de datos 1
+  - Bases de datos 2
+  - Ingles Tecnico 1
+  - Ingles Tecnico 2
+
+
+== Modalidad 
+
+Universitario: Online, unico alumno, horarios a coordinar, pago en digital, sesiones de 1 a 2 horas, la cantidad de sesiones que desees
+Estudiante secundario: Online/Presencial, varios alumnos por nivel, horarios propuestos, pago en efectivo/digital, sesiones de 1/1:30hs, cantidad de sesiones minimas propuestas + actualizaciones*.
+
+*Actualizaciones: A lo largo que estudiamos van surgiendo dudas que DEBEN responderse, porque me importa que entiendas para poder avanzar. Por lo que coordinaremos cuantas sesiones extra incorporar.
