@@ -1,0 +1,3 @@
+
+#!/#!/usr/bin/env bashuusr/bin/env bash
+poetry run uvicorn api:app
