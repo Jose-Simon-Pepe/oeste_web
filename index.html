@@ -257,15 +257,19 @@
                     </div>
                 </div>
             </section>
-
-
- <script>
+   <script>
         function sendMessage() {
             // Obtener los valores de los campos de entrada
             var name = document.getElementById('name').value;
             var email = document.getElementById('email').value;
             var phone = document.getElementById('phone').value;
             var message = document.getElementById('message').value;
+
+            // Validar campos obligatorios
+            if (!name || !email || !phone) {
+                alert("Por favor, asegurate de completar tu Nombre, Correo Electrónico y Teléfono");
+                return;
+            }
 
             // Construir la URL de WhatsApp
             var whatsappUrl = 'https://web.whatsapp.com/send?phone=+5491128688983';
@@ -289,6 +293,7 @@
             window.location.href = whatsappUrl;
         }
     </script>
+
             
         </main>
         <!-- Footer-->
