@@ -258,40 +258,56 @@
                 </div>
             </section>
    <script>
-        function sendMessage() {
-            // Obtener los valores de los campos de entrada
-            var name = document.getElementById('name').value;
-            var email = document.getElementById('email').value;
-            var phone = document.getElementById('phone').value;
-            var message = document.getElementById('message').value;
+       function sendMessage() {
+    // Obtener los valores de los campos de entrada
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var phone = document.getElementById('phone').value;
+    var message = document.getElementById('message').value;
 
-            // Validar campos obligatorios
-            if (!name || !email || !phone) {
-                alert("Por favor, asegurate de completar tu Nombre, Correo Electrónico y Teléfono");
-                return;
-            }
+    // Validar campos obligatorios
+    if (!name || !email || !phone) {
+        alert("Por favor, asegúrate de completar tu Nombre, Correo Electrónico y Teléfono");
+        return;
+    }
 
-            // Construir la URL de WhatsApp
-            var whatsappUrl = 'https://web.whatsapp.com/send?phone=+5491128688983';
+    // Construir la URL de WhatsApp
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-            // Agregar la información al mensaje
-            var mensajeCompleto = '*Hola%20Oeste%20Puede!*%20%20Vengo%20de%20la%20web,%20y%20';
-            
-            if (message.trim() === '') {
-                // Caso: mensaje vacío
-                mensajeCompleto += 'me%20gustaria%20tener%20mas%20informacion.';
-            } else {
-                // Caso: mensaje no vacío
-                mensajeCompleto += 'quiero%20decirles%20que%20' + encodeURIComponent(message);
-            }
+    var whatsappUrl;
+    if (isMobile) {
+        // Caso: dispositivo móvil
+        whatsappUrl = 'whatsapp://send?phone=+5491128688983';
+    } else {
+        // Caso: navegador de escritorio
+        whatsappUrl = 'https://web.whatsapp.com/send?phone=+5491128688983';
+    }
 
-            // Agregar el resto de la información al mensaje
-            mensajeCompleto += '%20Mi%20nombre%20es%20' + encodeURIComponent(name) + '%20mi%20numero%20es%20' + encodeURIComponent(phone) + '%20mi%20email%20es%20' + encodeURIComponent(email);
+    // Agregar la información al mensaje
+    var mensajeCompleto = 'Hola%20Oeste%20Puede!%20Vengo%20de%20la%20web,%20';
 
-            // Completar la URL de WhatsApp y redirigir
-            whatsappUrl += '&text=' + mensajeCompleto;
-            window.location.href = whatsappUrl;
-        }
+    if (message.trim() === '') {
+        // Caso: mensaje vacío
+        mensajeCompleto += 'me%20gustaría%20tener%20más%20información.';
+    } else {
+        // Caso: mensaje no vacío
+        mensajeCompleto += 'quiero%20decirles%20que%20' + encodeURIComponent(message);
+    }
+
+    // Agregar el resto de la información al mensaje
+    mensajeCompleto += '%20Mi%20nombre%20es%20' + encodeURIComponent(name) + '%20mi%20numero%20es%20' + encodeURIComponent(phone) + '%20mi%20email%20es%20' + encodeURIComponent(email);
+
+    // Completar la URL de WhatsApp y redirigir
+    whatsappUrl += '&text=' + mensajeCompleto;
+
+    if (isMobile) {
+        // Abrir la aplicación de WhatsApp en dispositivos móviles
+        window.location.href = whatsappUrl;
+    } else {
+        // Redirigir a la versión web en navegadores de escritorio
+        window.open(whatsappUrl, '_blank');
+    }
+}
     </script>
 
             
