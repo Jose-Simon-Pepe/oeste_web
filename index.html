@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Personal - Start Bootstrap Theme</title>
+        <title>Oeste Puede Programar</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Custom Google font-->
@@ -16,8 +16,25 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body class="d-flex flex-column h-100">
+    </head>  
+    <style>
+    
+  body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('assets/background.png');
+  background-repeat: repeat;
+  background-size: 200px;
+  opacity: 0.6; /* Ajusta la opacidad según tus preferencias */
+  z-index: -1; /* Coloca el pseudo-elemento detrás del contenido */
+  }
+
+    </style>
+    <body class="d-flex flex-column h-100" backg>
         <main class="flex-shrink-0">
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
@@ -29,7 +46,6 @@
                             <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                             <li class="nav-item"><a class="nav-link" href="resume.html">Planes</a></li>
                             <li class="nav-item"><a class="nav-link" href="projects.html">Testimonios</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
                         </ul>
                     </div>
                 </div>
