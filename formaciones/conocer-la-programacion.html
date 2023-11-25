@@ -13,6 +13,22 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
+  <<style>
+  
+  body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('../assets/background.png');
+  background-repeat: repeat;
+  background-size: 200px;
+  opacity: 0.4; /* Ajusta la opacidad según tus preferencias */
+  z-index: -1; /* Coloca el pseudo-elemento detrás del contenido */
+  }
+  </style>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
             <!-- Navigation-->
