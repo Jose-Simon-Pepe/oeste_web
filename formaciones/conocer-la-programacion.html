@@ -13,7 +13,7 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
-  <<style>
+  <style>
   
   body::before {
   content: "";
@@ -28,6 +28,55 @@
   opacity: 0.4; /* Ajusta la opacidad según tus preferencias */
   z-index: -1; /* Coloca el pseudo-elemento detrás del contenido */
   }
+
+
+       #freecourse {
+            background-color: #4CAF50; /* Verde */
+            color: #ffffff; /* Texto blanco */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            animation: colorChange 2s infinite alternate; /* 3s para la duración, infinite para que se repita, alternate para que vaya y vuelva */
+        }
+
+      #free{
+            padding: 1px 3px;
+            border: none;
+            border-radius: 5px;
+            animation: freeColorChange 2s infinite ; /* 3s para la duración, infinite para que se repita, alternate para que vaya y vuelva */
+  
+  }
+
+        @keyframes freeColorChange {
+            0% {
+                color: #AD4BFF; /* Verde inicial */
+                letter-spacing: 2px;
+            }
+            50% {
+                color: #C279FF; /* Verde más oscuro a la mitad de la animación */
+                letter-spacing: 8px;
+                margin-left: 20px
+            }
+            100% {
+                color: #AD4BFF; /* Vuelve al verde al final de la animación */
+                letter-spacing: 2px;
+                margin-left: 0px
+            }
+        }
+
+        @keyframes colorChange {
+            0% {
+                background-color: #4CAF50; /* Verde inicial */
+            }
+            50% {
+                background-color: #388E3C; /* Verde más oscuro a la mitad de la animación */
+            }
+            100% {
+                background-color: #4CAF50; /* Vuelve al verde al final de la animación */
+            }
+        }
+ 
   </style>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
@@ -52,10 +101,11 @@
                     <div class="row gx-5 align-items-center justify-content-center">
                         <div class="col-lg-8 col-xl-7 col-xxl-6">
                             <div class="my-5 text-center text-xl-start">
-                                <h1 class="display-5 fw-bolder text-white mb-2">Conocer la Programacion</h1>
+    <button id="freecourse">Free Course</button>
+                <h1 class="display-5 fw-bolder text-white mb-2">Conocer la <span id="free">Programacion</span></h1>
                                 <p class="lead fw-normal text-white-50 mb-4">Una visita realista al estudio y al trabajo en Desarrollo de Software, gracias al cual podras decidir si es para vos, y como empezar.</p>
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                                    <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features" id="participar" onclick="enviarMensajeWhatsApp()" >Participar</a>
+                                    <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features" id="participar" onclick="enviarMensajeWhatsApp()" >Participar gratis</a>
                                     <a class="btn btn-outline-light btn-lg px-4" href="https://oestepuede.lat/index.html#contacto">Pedir informacion</a>
                                 </div>
                             </div>
@@ -139,7 +189,7 @@
                                     <div class="fw-bold">
                                         Jose Pepe
                                         <span class="fw-bold text-primary mx-1">/</span>
-                                        CEO, Oeste Puede
+                                        Profesor en Oeste Puede
                                     </div>
                                 </div>
                             </div>
