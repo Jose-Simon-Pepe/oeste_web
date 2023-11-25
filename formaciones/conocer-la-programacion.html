@@ -80,6 +80,21 @@
         }
     </script>
 
+    <script>
+        function enviarMensajeWhatsAppTemario() {
+            var telefono = '+5491128688983';
+            var mensaje = encodeURIComponent('Hola Oeste Puede! Vengo de la web porque me intereso el taller de Conocer la Programacion, y me gustaria conocer el temario que tienen preparado, asi como las fechas de inscripcion. Gracias!');
+
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                // Si es un dispositivo móvil, abrir la aplicación de WhatsApp
+                window.location.href = 'whatsapp://send?phone=' + telefono + '&text=' + mensaje;
+            } else {
+                // Si es un navegador web, abrir WhatsApp Web
+                window.location.href = 'https://wa.me/' + telefono + '?text=' + mensaje;
+            }
+        }
+    </script>
+
             <!-- Features section-->
             <section class="py-5" id="features">
                 <div class="container px-5 my-5">
@@ -167,7 +182,7 @@
                     <p>En proximos dias estara siendo publicado por aqui.</p>
                     <p>Sin embargo, podes enviarnos un mensaje y te informaremos sobre lo que ya tenemos preparado.</p>
                     <hr>
-            <p><a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features" id="participar" onclick="enviarMensajeWhatsApp()" >Participar</a></p>
+            <p><a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features" id="participar" onclick="enviarMensajeWhatsAppTemario()" >Conocer el temario</a></p>
                 </div>
 
 
