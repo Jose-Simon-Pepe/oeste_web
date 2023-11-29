@@ -18,6 +18,14 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>  
     <style>
+
+  #foll{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+  }
     
   body::before {
   content: "";
@@ -54,7 +62,7 @@
             <!-- Header-->
             <header class="py-5">
 
-                <div class="alert alert-primary" role="alert">
+                <div id="foll" class="alert alert-primary" role="alert">
                   <h4 class="alert-heading">Nueva formacion gratuita!</h4>
                     <p><b>"CONOCER LA PROGRAMACION"</b></p>
                     <p>Taller de introduccion al rubro de Programacion (desarrollo de software)</p>
