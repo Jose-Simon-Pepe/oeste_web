@@ -1,4 +1,4 @@
-== Temario de la mentoria de Matematica y Geometria
+== Temario de la mentoria de MATEMATICA y GEOMETRIA
 
 Este temario esta en construccion.
 Sin embargo, los temas a dar corresponden a estas materias y examenes:
@@ -14,7 +14,7 @@ Adjuntamos las calificaciones obtenidas por Jose en esas materias, para que veas
 
 image::cals_math.png[]
 
-== Temario de Ingles!
+== Temario de INGLES
 
 Este temario esta en construccion.
 Sin embargo, los temas a dar corresponden a estas materias y examenes:

@@ -1,0 +1,12 @@
+= Apoyo educativo para la UNLaM
+
+Estos son los temarios que Jose puede darte.
+Si bien ingles, matematica y geometria son principalmente para el ingreso, programacion se extiende incluso a apoyo a cursantes de ingenieria en sistemas.
+
+include::propuesta_programacion.adoc[]
+
+include::propuesta_matematicas.adoc[]
+
+En caso de encontrar util las propuestas, favor de contactar a Jose por su numero telefonico, o mediante correo 
+correo: jose.s.contacto@gmail.com
+tel: +54 9 11 2868-8983
